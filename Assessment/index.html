@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<script src="index.js"></script>
+</head>
+<body>
+<div id="body" style="background-color: pink; width: 40%;">
+        <form name="my_form" id="my_form" onsubmit="putValues()">
+                <table>
+                    <tr>
+                        <td><span style="background-color: yellow" id="name_label">Student Name:</span></td>
+                        <td><input type="text" name="student_name" id="student_name" style="background-color: yellow" maxlength="20" required></td>
+                    </tr>
+                    <tr>
+                        <td><span style="background-color: yellow" id="age_label">Age:</span></td>
+                        <td><input type="text" name="student_age" id="student_age" style="background-color: yellow" max="100"></td>
+                    </tr>
+                    <tr>
+                        <td>M:<input type="radio" name="gender" checked></td>
+                        <td>F:<input type="radio" name="gender"></td>
+                    </tr>
+                    <tr>
+                        <td>City:</td>
+                        <td>
+                            <select name="city" id="city">
+                                <option disabled selected value=""></option>
+                                <option value="Delhi">Delhi</option>
+                                <option value="Mumbai">Mumbai</option>
+                                <option value="Kolkata">Kolkata</option>
+                                <option value="Chennai">Chennai</option>
+                            </select>
+                        </td>    
+                    </tr>
+                    <tr>
+                        <td>Hobbies:</td>
+                        <td><input type="checkbox" name="painting" id="painting">Painting<input type="checkbox" name="dancing" id="dancing">Dancing<input type="checkbox" name="sports" id="sports">Sports</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="submit" name="student_submit" id="student_submit">Submit</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <div id="details">
+                <div>Name:<span id="name_value"></span></div>
+                <div>Age:<span id="age_value"></span></div>
+                <div>City:<span id="city_value"></span></div>
+                <div>Hobbies:<span id="hobbies_value"></span></div>
+            </div>
+</div>
+</body>
+</html>
